@@ -1,0 +1,30 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Environment And Debug
+    |--------------------------------------------------------------------------
+    |
+    | set the application environment, and should be debugging?
+    |
+    */
+
+    'env' => env('ENV', 'development'),
+
+    'debug' => env('DEBUG', true),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Encryption Key
+    |--------------------------------------------------------------------------
+    |
+    | use encryption with encrypt key and cipher
+    |
+    */
+
+    'key' => env('KEY', 'generated-key'),
+
+    'cipher' => 'AES-256-CBC',
+];
