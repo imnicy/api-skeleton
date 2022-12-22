@@ -21,7 +21,7 @@ return [
     |
     | Supports all SQL databases, including MySQL, MSSQL, SQLite, MariaDB,
     | PostgreSQL, Sybase, Oracle and more
-
+    |
     | @see https://medoo.in/api/new
     |
     */
@@ -32,9 +32,15 @@ return [
             // required
             'type' => 'mysql',
             'database' => env('DB_NAME', 'database'),
-            'host' => env('DB_HOST', '127.0.0.1:3306'),
+            'host' => env('DB_HOST', '127.0.0.1'),
             'username' => env('DB_USER', 'root'),
             'password' => env('DB_PASSWORD'),
+
+            // [optional]
+            'charset' => 'utf8mb4',
+            'port' => 3306,
+            // Database table prefix
+            // 'prefix' => 'PREFIX_',
         ],
 
     ],
